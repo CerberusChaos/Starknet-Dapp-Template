@@ -1,11 +1,11 @@
-import { AppConfig } from "../utils/AppConfig";
+import { AppConfig } from '../utils/AppConfig';
 
 const Logo = () => {
   return (
     <div className={`inline-flex items-center`}>
-      <img className="w-10 h-10 mr-2" src={`/favicon.svg`} alt="logo"></img>
+      <img className="mr-2 h-10 w-10" src={`/favicon.svg`} alt="logo"></img>
 
-      <span className="text-[#150F37] font-semibold text-xl">
+      <span className="text-xl font-semibold text-[#150F37]">
         {AppConfig.site_name}
       </span>
     </div>

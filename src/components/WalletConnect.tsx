@@ -1,29 +1,30 @@
-import { installWallet } from "@/utils";
-import { useAccount, useConnect, useDisconnect } from "@starknet-react/core";
-import { useMemo } from "react";
+import { useAccount, useConnect, useDisconnect } from '@starknet-react/core';
+import { useMemo } from 'react';
+
+import { installWallet } from '@/utils';
 
 function WalletConnected() {
   const { address } = useAccount();
   const { disconnect } = useDisconnect();
 
   const shortenedAddress = useMemo(() => {
-    if (!address) return "";
+    if (!address) return '';
     return `${address.slice(0, 6)}...${address.slice(-4)}`;
   }, [address]);
 
   return (
-    <div className="font-medium text-sm">
+    <div className="text-sm font-medium">
       <div className="dropdown">
-        <div tabIndex={0} role="button" className="btn btn-wallet">
+        <div tabIndex={0} role="button" className="btn-wallet btn">
           {shortenedAddress}
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+          className="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
         >
           <li>
             <a>
-              {" "}
+              {' '}
               <button onClick={() => disconnect()}>Disconnect</button>
             </a>
           </li>
@@ -39,10 +40,10 @@ function ConnectWallet() {
   return (
     <div>
       <button
-        className="btn btn-wallet font-medium text-sm"
+        className="btn-wallet btn text-sm font-medium"
         onClick={() =>
           (
-            document.getElementById("my_modal_3") as HTMLDialogElement
+            document.getElementById('my_modal_3') as HTMLDialogElement
           )?.showModal()
         }
       >
@@ -52,12 +53,12 @@ function ConnectWallet() {
         <div className="modal-box">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            <button className="btn btn-circle btn-ghost btn-sm absolute right-2 top-2">
               ✕
             </button>
           </form>
-          <h3 className="font-bold text-lg text-black">Select Wallet</h3>
-          <div className="join join-vertical w-2/3 mt-7 flex mx-auto">
+          <h3 className="text-lg font-bold text-black">Select Wallet</h3>
+          <div className="join join-vertical mx-auto mt-7 flex w-2/3">
             {connectors.map((connector) => {
               return (
                 <button
@@ -71,10 +72,11 @@ function ConnectWallet() {
                   className="btn join-item hover:bg-[#8B5FBF]"
                 >
                   <img
-                    className="w-7 h-7 mr-2"
+                    className="mr-2 h-7 w-7"
                     src={`https://iconic.dynamic-static-assets.com/icons/sprite.svg#${connector.id.toLocaleLowerCase()}`}
+                    alt="wallet"
                   />
-                  Connect{" "}
+                  Connect{' '}
                   {connector.id.charAt(0).toUpperCase() + connector.id.slice(1)}
                 </button>
               );

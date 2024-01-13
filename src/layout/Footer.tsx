@@ -1,8 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { Section } from "../components/Section";
-import { Logo } from "../components/Logo";
-import { AppConfig } from "@/utils/AppConfig";
+import { AppConfig } from '@/utils/AppConfig';
+
+import { Logo } from '../components/Logo';
+import { Section } from '../components/Section';
 
 const Footer = () => (
   <div className="bg-gray-100">
@@ -14,7 +15,7 @@ const Footer = () => (
           <ul className="navbar mt-5 flex flex-row justify-center text-xl font-medium text-gray-800">
             <li>
               <a
-                className="link link-hover text-[#4A4A4A]"
+                className="link-hover link text-[#4A4A4A]"
                 href="https://www.starknet.io"
               >
                 Starknet.io
@@ -22,7 +23,7 @@ const Footer = () => (
             </li>
             <li>
               <a
-                className="link link-hover text-[#4A4A4A]"
+                className="link-hover link text-[#4A4A4A]"
                 href="https://book.cairo-lang.org/"
               >
                 Cairo Book
@@ -30,7 +31,7 @@ const Footer = () => (
             </li>
             <li>
               <a
-                className="link link-hover text-[#4A4A4A]"
+                className="link-hover link text-[#4A4A4A]"
                 href="https://starknet-react.com/"
               >
                 Starknet React
@@ -38,7 +39,7 @@ const Footer = () => (
             </li>
             <li>
               <a
-                className="link link-hover text-[#4A4A4A]"
+                className="link-hover link text-[#4A4A4A]"
                 href="https://github.com/CerberusChaos/Starknet-Dapp-Template"
               >
                 GitHub
@@ -95,7 +96,7 @@ const Footer = () => (
 
         <div className="mt-8 text-sm">
           <div className="footer-copyright">
-            © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{" "}
+            © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{' '}
             <a href="https://github.com/CerberusChaos/Starknet-Dapp-Template">
               Starknet Dapp Teamplate
             </a>

@@ -1,5 +1,5 @@
-import className from "classnames";
-import { useRouter } from "next/router";
+import className from 'classnames';
+import { useRouter } from 'next/router';
 
 export type IVerticalFeatureRowProps = {
   title: string;
@@ -10,8 +10,8 @@ export type IVerticalFeatureRowProps = {
 };
 
 const VerticalRow = (props: IVerticalFeatureRowProps) => {
-  const verticalFeatureClass = className("flex", "flex-wrap", "items-center", {
-    "flex-row-reverse": props.reverse,
+  const verticalFeatureClass = className('flex', 'flex-wrap', 'items-center', {
+    'flex-row-reverse': props.reverse,
   });
 
   const router = useRouter();

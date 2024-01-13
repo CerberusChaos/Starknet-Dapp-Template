@@ -1,19 +1,18 @@
-import { ReactNode } from "react";
-
-import { devnet, goerli, mainnet } from "@starknet-react/chains";
+import { mainnet } from '@starknet-react/chains';
 import {
-  StarknetConfig,
   argent,
   braavos,
   publicProvider,
+  StarknetConfig,
   useInjectedConnectors,
   voyager,
-} from "@starknet-react/core";
+} from '@starknet-react/core';
+import type { ReactNode } from 'react';
 
 export function StarknetProvider({ children }: { children: ReactNode }) {
   const { connectors } = useInjectedConnectors({
     recommended: [argent(), braavos()],
-    includeRecommended: "onlyIfNoConnectors",
+    includeRecommended: 'onlyIfNoConnectors',
   });
 
   return (
