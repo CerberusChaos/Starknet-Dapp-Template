@@ -106,3 +106,5 @@ npm run start
 ### Open Source Contributions
 
 We welcome and encourage community contributions to this project. If you encounter issues or have good suggestions, feel free to open an issue.
+
+🌟 Created a StarkNet project using our template? We're excited to share your work with the global StarkNet community! Simply email us your project name and GitHub link, and we'll feature your project in our README and on Discord. This is a great opportunity to increase your project's visibility and join our vibrant StarkNet community!
