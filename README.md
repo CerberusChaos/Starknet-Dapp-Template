@@ -1,7 +1,7 @@
 # Starknet Dapp Template with Next.js 14+, Tailwind CSS 3, TypeScript, DaisyUI, and Starknet-React
 
 <p align="center">
-  <a href="https://www.starknet.io"><img src="https://www.starknet.io/assets/sn_logo_banner.png" alt="starknet banner"></a>
+  <a href="https://www.starknet.io"><img src="https://www.starknet.io/wp-content/themes/Starknet/assets/img/starknet-logo.svg" alt="starknet banner"></a>
 </p>
 
 🚀 This is a Starknet Dapp template built with Next.js, Tailwind CSS, TypeScript, and DaisyUI. Our template focuses on providing an excellent developer experience, integrating the latest technologies and tools, including crucial Starknet-related libraries (@starknet-react/chains, @starknet-react/core, starknet, get-starknet-core). It empowers developers to swiftly construct powerful Starknet Dapps.
